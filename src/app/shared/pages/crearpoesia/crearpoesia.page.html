@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>crearpoesia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+      <ion-item>
+        <ion-label position="stacked">Ingresar Titulo <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" [(ngModel)]="poesia.titulo" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Ingresar Poesia <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" [(ngModel)]="poesia.poesia" ></ion-input>
+      </ion-item>
+ 
+      <ion-item>
+      <H1>Tocar para ingresar fecha que inicio su poema.</H1>
+      <ion-datetime displayFormat="MMM DD, h:mm A" [(ngModel)]="poesia.fecha">Tocar Ingresar Inicio De Su Poesia:</ion-datetime>
+      </ion-item>
+      
+      <ion-item>
+        
+        <app-image-upload [icon]="'camera'" [type]="'camera'" (uploadFinished)="imagenCargada($event)"></app-image-upload>
+        <ion-button  (click)="tomarfoto()">Tomar Foto</ion-button>
+        <img [src]="base64Image">
+      </ion-item>
+
+      <div class="ion-padding">
+        <ion-button expand="block" type="submit" (click)="guardarPoesia()">Guardar</ion-button>
+      </div>
+
+
+</ion-content>

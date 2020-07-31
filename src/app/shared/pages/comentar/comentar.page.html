@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Comentar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Ingresar Comentario <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input  [(ngModel)]="com.comentario"  ></ion-input>
+
+  </ion-item>
+</ion-content>
+<div class="ion-padding">
+  <ion-button expand="block" type="submit" (click)="guardarcomentario()">Guardar Comentario</ion-button>
+</div>

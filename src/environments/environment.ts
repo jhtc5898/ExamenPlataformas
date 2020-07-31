@@ -12,7 +12,9 @@ export const environment = {
     storageBucket: "johntenesacaexamen-2020.appspot.com",
     messagingSenderId: "809901613197",
     appId: "1:809901613197:web:408bfe478ad194ba8a02c4"
-  }
+  },
+  googleWebClientId: '809901613197-l1nij85hinpka351e0rd9r25j54cd17q.apps.googleusercontent.com'
+
 
 };
 

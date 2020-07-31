@@ -9,16 +9,14 @@ import { Observable } from 'rxjs';
   styleUrls: ['./listar.page.scss'],
 })
 export class ListarPage implements OnInit {
-  empleados: Observable<any[]>
+  poesias: Observable<any[]>
   constructor(private empleosService: ServicioexamenService,
     public router:Router) { }
 
   ngOnInit()
    {
-    this.empleados= this.empleosService.getEmpleos()
+    this.poesias= this.empleosService.getpoesias()
   }
-  showEmpleo(id:any){
-    this.router.navigate([`listar/${id}`])
-  }
+  
 
 }

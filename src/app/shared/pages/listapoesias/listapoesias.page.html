@@ -6,4 +6,29 @@
 
 <ion-content>
 
+  <ion-list> 
+    <ion-item *ngFor="let poesia of poesias | async; trackBy: trackByFn" >
+      <ion-label (click)="showPoesia (poesia.uid)">
+        <h2>{{poesia.titulo}}</h2>
+        <p>{{poesia.poesia}}</p>
+       </ion-label>
+       <ion-button color="primary" (click)="comentar(poesia.uid)" >Comentar</ion-button>
+       <ion-button color="primary" (click)="listacomentarios(poesia.uid)" >Lista Comentarios</ion-button>
+      
+    </ion-item>
+  
+    
+   
+  </ion-list>
+  
+
+ 
+
+  
+
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+      <ion-fab-button (click)="showCrearpoesia()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
 </ion-content>
