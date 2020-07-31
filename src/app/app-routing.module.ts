@@ -19,6 +19,10 @@ const routes: Routes = [
   {
     path: 'listar/:id',
     loadChildren: () => import('./shared/pages/listar/listar.module').then( m => m.ListarPageModule)
+  },
+  {
+    path: 'listapoesias',
+    loadChildren: () => import('./shared/pages/listapoesias/listapoesias.module').then( m => m.ListapoesiasPageModule)
   }
 ];
 
