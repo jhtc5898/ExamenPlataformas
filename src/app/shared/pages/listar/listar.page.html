@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let empleo of empleados | async; trackBy: trackByFn" >
+    <ion-avatar slot="start">
+    </ion-avatar >
+    <ion-label (click)="showEmpleo (empleo.uid)">
+      <h3>{{empleo.nombre}}</h3>
+      <p>{{empleo.apellido}}</p>
+     </ion-label>
+  
+  </ion-item>
+</ion-content>

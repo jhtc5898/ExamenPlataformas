@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "809901613197",
+    "firebase_url": "https://johntenesacaexamen-2020.firebaseio.com",
+    "project_id": "johntenesacaexamen-2020",
+    "storage_bucket": "johntenesacaexamen-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809901613197:android:1802d57c8de764498a02c4",
+        "android_client_info": {
+          "package_name": "ec.edu.ups.pm.examen2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809901613197-l1nij85hinpka351e0rd9r25j54cd17q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfkV1fkHYkjJh6RYCs9d0AyRqfx2CEEv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809901613197-l1nij85hinpka351e0rd9r25j54cd17q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
